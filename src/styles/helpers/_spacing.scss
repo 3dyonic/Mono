@@ -1,0 +1,130 @@
+// stylelint-disable declaration-no-important
+
+// Margin and Padding
+@each $prop, $abbrev in (margin: m, padding: p) {
+	@each $size, $value in $spacers {
+		.#{$abbrev}-#{$size} {
+			@if $size == 0 {
+				#{$prop}: 0;
+			} @else {
+				#{$prop}: spacing($size, xs) !important;
+
+				@each $breakpoint, $value in $min-breakpoints {
+					@media #{$value}{
+						#{$prop}: spacing($size, $breakpoint) !important;
+					}
+				}
+			}
+		}
+
+		.#{$abbrev}t-#{$size},
+		.#{$abbrev}y-#{$size} {
+			@if $size == 0 {
+				#{$prop}-top: 0;
+			} @else {
+				#{$prop}-top: spacing($size, xs) !important;
+
+				@each $breakpoint, $value in $min-breakpoints {
+					@media #{$value}{
+						#{$prop}-top: spacing($size, $breakpoint) !important;
+					}
+				}
+			}
+		}
+
+
+		.#{$abbrev}r-#{$size},
+		.#{$abbrev}x-#{$size} {
+			@if $size == 0 {
+				#{$prop}-right: 0 !important;
+			} @else {
+				#{$prop}-right: spacing($size, xs) !important;
+
+				@each $breakpoint, $value in $min-breakpoints {
+					@media #{$value}{
+						#{$prop}-right: spacing($size, $breakpoint) !important;
+					}
+				}
+			}
+		}
+		.#{$abbrev}b-#{$size},
+		.#{$abbrev}y-#{$size} {
+			@if $size == 0 {
+				#{$prop}-bottom: 0 !important;
+			} @else {
+				#{$prop}-bottom: spacing($size, xs) !important;
+
+				@each $breakpoint, $value in $min-breakpoints {
+					@media #{$value}{
+						#{$prop}-bottom: spacing($size, $breakpoint) !important;
+					}
+				}
+			}
+		}
+
+		.#{$abbrev}l-#{$size},
+		.#{$abbrev}x-#{$size} {
+			@if $size == 0 {
+				#{$prop}-left: 0 !important;
+			} @else {
+				#{$prop}-left: spacing($size, xs) !important;
+
+				@each $breakpoint, $value in $min-breakpoints {
+					@media #{$value}{
+						#{$prop}-left: spacing($size, $breakpoint) !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Negative margins (e.g., where `.mb-n1` is negative version of `.mb-1`)
+@each $size, $length in $spacers {
+	@if $size != 0 {
+		.m-n#{$size} {
+			margin: - spacing($size, xs) !important;
+		}
+		.mt-n#{$size},
+		.my-n#{$size} {
+			margin-top: - spacing($size, xs) !important;
+		}
+		.mr-n#{$size},
+		.mx-n#{$size} {
+			margin-right: - spacing($size, xs) !important;
+		}
+		.mb-n#{$size},
+		.my-n#{$size} {
+			margin-bottom: - spacing($size, xs) !important;
+		}
+		.ml-n#{$size},
+		.mx-n#{$size} {
+			margin-left: - spacing($size, xs) !important;
+		}
+	}
+}
+
+// Some special margin utils
+.m-auto {
+	margin: auto !important;
+}
+
+.mt-auto,
+.my-auto {
+	margin-top: auto !important;
+}
+
+.mr-auto,
+.mx-auto {
+	margin-right: auto !important;
+}
+
+.mb-auto,
+.my-auto {
+	margin-bottom: auto !important;
+}
+
+.ml-auto,
+.mx-auto {
+	margin-left: auto !important;
+}

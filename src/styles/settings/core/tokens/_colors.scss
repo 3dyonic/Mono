@@ -1,0 +1,52 @@
+// # MonoDS Colors
+// This Partial Scope is Color Tokens Registration
+// - We Register each color with a unique name.
+// - We add a color prefix to easily sort the names by context
+// - Than we Assign it to a Semantic name within the 'brand' partial scope.
+// - Benefits for this approach:
+// -- All the colors we use are in one place.
+// -- Avoiding not registered color instances
+// -- Keeping Semantic Colors as abstract keys.
+
+// ## Tools
+// - We use (color generator)[https://chir.ag/projects/name-that-color/] for naming our colors
+// - We use https://www.colorhexa.com/efdecd to retrieve more color info
+
+// ## Suggestions:
+// - We recommend using HSL values for colors, since it give more data on color wheel
+// -- This allows the creation of a systematic interpolation using deg, hue, lightness.
+// -- It can also detect color similarities and avoid close colors.
+
+// ## Accessibility
+// - We recommend a workflow that includes checking color blindness and contrast
+// -- (color blindness reference)[https://www.smashingmagazine.com/2016/06/improving-color-accessibility-for-color-blind-users/]
+// -- (Accessibility guidelines and tools)[http://web-accessibility.carnegiemuseums.org/design/color/]
+
+// ## Similarity and interpolation:
+// In some cased we use semantic interpolation instead of registering new colors.
+// E.g:
+// - #2b6492 and #25507a can be linked using interpolation.
+// - Green and reds Here are both semantic interpolations of
+// -- Green #08753f
+// -- Red #c91b39
+// --- We did not use interpolation since scaffold scope was limited.
+// -- we used 'tint' prefix.
+
+$reg-color-blue-st-tropaz: #2b6492;// rgb(43,100,146) hsl(206.8,54.5%,37.1%)
+$reg-color-blue-bay: #25507a; // rgb(37,80,122) hsl(209.6,53.5%,31.2%)
+$reg-color-blue-cloud-burst: #1e354b; // rgb(30,53,75) hsl(209.3,42.9%,20.6%)
+
+$reg-color-gray-light-desert: #f5f5f3; // rgb(245,245,243) hsl(60,9.1%,95.7%)
+$reg-color-gray-loblolly: #bcc6cf; // rgb(188,198,207) hsl(208.4,16.5%,77.5%)
+$reg-color-gray-dusty: #9c9c9c; //rgb(156,156,156) hsl(0,0%,61.2%)
+$reg-color-gray-shuttle: #56626e; // rgb(86,98,110) hsl(210,12.2%,38.4%)
+
+$reg-color-white: #fff;
+
+$reg-color-green-light-magic-mint: #b1f2d2; // rgb(177,242,210) hsl(150.5,71.4%,82.2%)
+$reg-color-green-light-mountain-meadow: #1dbc6d; // rgb(29,188,109) hsl(150.2,73.3%,42.5%)
+$reg-color-green-salem: #08753f; // rgb(8,117,63) hsl(150.3,87.2%,24.5%)
+
+$reg-color-red-light-sundown: #ffaebc; // rgb(255,174,188) hsl(349.6,100%,84.1%)
+$reg-color-red-light-amaranth: #ec405e; // rgb(236,64,94) hsl(349.5,81.9%,58.8%)
+$reg-color-red-cardinal: #c91b39; // rgb(201,27,57) hsl(349.7,76.3%,44.7%)

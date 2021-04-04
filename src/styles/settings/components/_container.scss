@@ -1,0 +1,15 @@
+// #monoDS Container Private API
+
+$container-padding-x: spacing(6, xs);
+$container-padding-x-mq-sm: spacing(6, sm);
+$container-padding-x-mq-lg: spacing(6, lg);
+
+$container-width: 100%;
+$container-width-mq-sm: rem(538);
+$container-width-mq-md: rem(614);
+$container-width-mq-lg: rem(1054);
+$container-width-mq-xl: rem(1234);
+
+.test {
+  color: brand-colors(primary);
+}

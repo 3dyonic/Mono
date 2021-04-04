@@ -1,0 +1,120 @@
+.headline-1 {
+  font-size: $headline-1-font-size;
+  font-weight: $headline-1-font-weight;
+  line-height: $line-height-headline;
+
+  @media #{$media-min-sm} {
+    font-size: $headline-1-font-size-mq-min-sm;
+  }
+
+  @media #{$media-min-lg} {
+    font-size: $headline-1-font-size-mq-min-lg;
+  }
+}
+
+.headline-2 {
+  display: none;
+
+  @media #{$media-min-lg} {
+    display: block;
+    font-size: $headline-1-font-size-mq-min-lg;
+    line-height: $line-height-headline;
+    font-weight: $headline-2-font-weight;
+  }
+}
+
+.headline-3 {
+  font-size: $headline-2-font-size;
+  line-height: $line-height-headline;
+  font-weight: $headline-2-font-weight;
+
+  @media #{$media-min-sm} {
+    font-size: $headline-2-font-size-mq-min-sm;
+  }
+
+  @media #{$media-min-lg} {
+    font-size: $headline-2-font-size-mq-min-lg;
+  }
+}
+
+
+.subtitle-1 {
+  font-size: $subtitle-1-font-size;
+  font-weight: $subtitle-1-font-weight;
+  line-height: $line-height-base;
+
+  @media #{$media-min-sm} {
+    font-size: $subtitle-1-font-size-mq-min-sm;
+  }
+
+  @media #{$media-min-lg} {
+    font-size: $subtitle-1-font-size-mq-min-lg;
+  }
+}
+
+.body-1 {
+  font-size: $body-1-font-size;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-base;
+
+  @media #{$media-min-sm} {
+    font-size: $body-1-font-size-mq-min-sm;
+  }
+
+  @media #{$media-min-lg} {
+    font-size: $body-1-font-size-mq-min-lg;
+  }
+}
+
+.body-2 {
+  font-size: $body-2-font-size;
+  line-height: $line-height-base;
+  font-weight: $font-weight-normal;
+
+  @media #{$media-min-sm} {
+    font-size: $body-2-font-size-mq-min-sm;
+  }
+
+  @media #{$media-min-lg} {
+    font-size: $body-2-font-size-mq-min-lg;
+  }
+}
+
+.body-3 {
+  display: none;
+
+  @media #{$media-min-lg} {
+    display: block;
+    font-size: $body-3-font-size-mq-min-lg;
+    font-weight: $font-weight-normal;
+    line-height: $line-height-base;
+  }
+}
+
+.note {
+  font-size: $note-font-size;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-base;
+
+  @media #{$media-min-sm} {
+    font-size: $note-font-size-mq-min-sm;
+  }
+
+  @media #{$media-min-lg} {
+    font-size: $note-font-size-mq-min-lg;
+  }
+}
+
+.hyperlink {
+  font-size: $hyperlink-font-size;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-base;
+
+  @media #{$media-min-sm} {
+    font-size: $hyperlink-font-size-mq-min-sm;
+  }
+
+  @media #{$media-min-lg} {
+    font-size: $hyperlink-font-size-mq-min-lg;
+  }
+}

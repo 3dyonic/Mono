@@ -1,0 +1,15 @@
+// MonoDS Mixins:
+
+// Define space
+// This mixin define media scoped spacing according to our spacing definitions
+// - XS is base and not scoped by media
+// - Since we share definitions between SM,MD and LG,XL We used min width and not range.
+@mixin define-space($prop, $spacer) {
+	#{$prop}: spacing($spacer, xs);
+
+	@each $breakpoint, $value in $min-breakpoints {
+		@media #{$value}{
+			#{$prop}: spacing($spacer, $breakpoint);
+		}
+	}
+}

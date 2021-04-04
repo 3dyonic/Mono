@@ -1,0 +1,16 @@
+// MonoDS Maps: Breakpoints
+// Semantic map for breakpoints
+// - adaptive range
+// - min width
+
+$breakpoints: (
+		xs: $media-xs,
+		sm: $media-sm,
+		lg: $media-lg,
+		xl: $media-xl
+);
+
+$min-breakpoints: (
+		sm: $media-min-sm,
+		lg: $media-min-lg,
+);

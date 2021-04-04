@@ -1,0 +1,44 @@
+// # Tokens: Spacing
+// Since we Did not detect a base unit for spacing or relationships
+// - we Use registration and than assigned it to the proper spacing matrix
+// - Using registration allowed as to detect the values in use, define then once and reassign them semantically.
+// -- Further suggestions can be found in the Storybook section.
+// - We used Rem values for convenience and utilized 'rem' function for readability;
+
+$reg-spacer-3: rem(3);
+$reg-spacer-6: rem(6);
+$reg-spacer-10: rem(10);
+$reg-spacer-16: rem(16);
+$reg-spacer-17: rem(17);
+$reg-spacer-20: rem(20);
+$reg-spacer-22: rem(22);
+$reg-spacer-23: rem(23);
+$reg-spacer-25: rem(25);
+$reg-spacer-30: rem(30);
+$reg-spacer-35: rem(35);
+$reg-spacer-40: rem(40);
+
+// ## Mobile first spacing tokens
+
+$spacing-1: $reg-spacer-6;
+$spacing-2: $reg-spacer-6;
+$spacing-3: $reg-spacer-17;
+$spacing-4: $reg-spacer-25;
+$spacing-5: $reg-spacer-30;
+$spacing-6: $reg-spacer-22;
+
+// SM, MD breakpoints
+$spacing-mq-min-sm-1: $reg-spacer-3;
+$spacing-mq-min-sm-2: $reg-spacer-16;
+$spacing-mq-min-sm-3: $reg-spacer-20;
+$spacing-mq-min-sm-4: $reg-spacer-23;
+$spacing-mq-min-sm-5: $reg-spacer-30;
+$spacing-mq-min-sm-6: $reg-spacer-35;
+
+// XL, LG breakpoints
+$spacing-mq-min-lg-1: $reg-spacer-3;
+$spacing-mq-min-lg-2: $reg-spacer-10;
+$spacing-mq-min-lg-3: $reg-spacer-17;
+$spacing-mq-min-lg-4: $reg-spacer-30;
+$spacing-mq-min-lg-5: $reg-spacer-35;
+$spacing-mq-min-lg-6: $reg-spacer-40;

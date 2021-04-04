@@ -1,0 +1,73 @@
+//# Custom Select
+// - simple scaffold of a custom select component
+// - drop down list was not define therefore is missing.
+
+.custom-select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: $custom-select-height;
+  padding-right: $custom-select-padding-x;
+  padding-left: $custom-select-padding-x;
+  font-size: $custom-select-font-size;
+  color: $custom-select-color;
+  border: solid rem(1) $custom-select-color;
+  border-radius: $custom-select-border-radius;
+
+  @media #{$media-min-lg}{
+    min-width: $custom-select--min-width-mq-min-lg;
+    max-width: $custom-select--max-width-mq-min-lg;
+  }
+
+
+  &:hover {
+    border-color: $custom-select-hover-color;
+
+    .#{custom-select}__option,
+    .#{custom-select}__button {
+      color: $custom-select-hover-color;
+    }
+  }
+
+  &--disabled {
+    &,
+    &:hover {
+      border-color: $custom-disabled-hover-color;
+
+      .#{custom-select}__option,
+      .#{custom-select}__button {
+        color: $custom-disabled-hover-color;
+      }
+    }
+  }
+
+  &--selected {
+    .#{custom-select}__option {
+      transform: translateY(-$custom-select-option-translate);
+    }
+
+    .#{custom-select}__label {
+      display: block;
+    }
+  }
+
+  &__option {
+    position: relative;
+    background-color: brand-colors(light);
+    transition: $custom-select-option-transition;
+    padding: $custom-select-option-padding;
+    left: $custom-select-option-padding;
+  }
+
+  &__label {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    color: $custom-select-label-color;
+  }
+
+  &__button {
+    color: $custom-select-color;
+  }
+}

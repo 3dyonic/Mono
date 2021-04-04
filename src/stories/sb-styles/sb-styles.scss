@@ -1,0 +1,9 @@
+// Importing MonoDs
+@import "../../styles/common";
+@import "./variables";
+
+.sb-styles-thumb {
+  width: $sb-styles-thumb-size;
+  height: $sb-styles-thumb-size;
+  border-radius: $sb-border-round;
+}

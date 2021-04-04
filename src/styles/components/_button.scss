@@ -1,0 +1,66 @@
+// # MonoDs Components: BTN definitions
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $btn-padding-y $btn-padding-x;
+  font-weight: $btn-font-weight;
+  line-height: $btn-line-height;
+  letter-spacing: $btn-letter-spacing;
+  border: $border-width solid transparent;
+  border-radius: $btn-border-radius;
+
+  @media #{$media-xs}, #{$media-lg}, #{$media-xl} {
+    font-size: $btn-font-size;
+  }
+
+  @media #{$media-sm}, #{$media-md} {
+    min-width: $btn-mq-sm-min-width;
+    max-width: $btn-mq-sm-max-width;
+    font-size: $btn-font-size-mq-sm;
+  }
+
+  @media #{$media-lg}, #{$media-xl} {
+    min-width: $btn-mq-lg-min-width;
+    max-width: $btn-mq-lg-max-width;
+  }
+
+
+  // todo: This can be later done by map loop and mixin
+  &--primary {
+    color: $btn-primary-color;
+    background-color: $btn-primary-background-color;
+    border-color: $btn-primary-border-color;
+
+    &:hover {
+      color: $btn-primary-hover-color;
+      background-color: $btn-primary-hover-background-color;
+      border-color: $btn-primary-hover-border-color;
+    }
+
+    &:active {
+      color: $btn-primary-active-color;
+      background-color: $btn-primary-active-background-color;
+      border-color: $btn-primary-active-border-color;
+    }
+  }
+
+  &--secondary {
+    color: $btn-secondary-color;
+    background-color: $btn-secondary-background-color;
+    border-color: $btn-secondary-border-color;
+
+    &:hover {
+      color: $btn-secondary-hover-color;
+      background-color: $btn-secondary-hover-background-color;
+      border-color: $btn-secondary-hover-border-color;
+    }
+
+    &:active {
+      color: $btn-secondary-active-color;
+      background-color: $btn-secondary-active-background-color;
+      border-color: $btn-secondary-active-border-color;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+// Custom Select Private Api
+
+$custom-select-font-size: $base-font-size;
+$custom-select-height: rem(56px);
+$custom-select-color: brand-colors(primary);
+$custom-select-border-radius: $radius-sm;
+$custom-select-padding-x: rem(14); // no such spacing value
+$custom-select--min-width-mq-min-lg: rem(388);
+$custom-select--max-width-mq-min-lg: rem(617);
+
+$custom-select-option-translate: $custom-select-height/2;
+$custom-select-option-transition: transform $transition-duration ease-in-out;
+$custom-select-option-padding: rem(4);
+
+$custom-select-hover-color: brand-colors(alt);
+$custom-disabled-hover-color: gray(base);
+
+$custom-select-label-color: brand-colors(secondary);

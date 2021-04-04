@@ -1,0 +1,23 @@
+// MonoDs scaffold
+
+body {
+	font-family: $base-font-family;
+	line-height: $line-height-base;
+}
+
+
+button,
+input {
+	font-family: inherit;
+}
+
+button {
+	cursor: pointer;
+	background-color: transparent;
+	border: 0;
+
+	&:focus {
+		outline: 0;
+	}
+}
+

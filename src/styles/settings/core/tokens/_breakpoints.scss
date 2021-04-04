@@ -1,0 +1,36 @@
+/* stylelint-disable max-line-length */
+
+// # MonoDs Breakpoints tokens
+// Below definitions are following design instructions.
+// - @media definitions assume 'adaptive' range or 'device' centered approach.
+// It is recommended to consider 'mobile first' and 'min-width approaches over the adaptive approach.
+// - Since this is only a scaffold and since breakpoint design is adaptive we do not use breakpoints map based functions.
+// - In a real project we would probably use something like bootstrap approach and reduce 'range' based breakpoint.
+// -- (bootstrap breakpoints)[https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss]
+// - I can Demonstrate the advantages of such approach.
+
+// ## Breakpoints min width
+$breakpoint-xs: 320px;
+$breakpoint-sm: 577px;
+$breakpoint-md: 769px;
+$breakpoint-lg: 1025px;
+$breakpoint-xl: 1441px;
+
+// ## Breakpoints max width
+$breakpoint-xs-end: $breakpoint-sm - 1px;
+$breakpoint-sm-end: $breakpoint-md - 1px;
+$breakpoint-md-end: $breakpoint-lg - 1px;
+$breakpoint-lg-end: $breakpoint-xl - 1px;
+
+// ## @Media definitions for adaptive (range based) breakpoints
+$media-xs: "(min-width:#{$breakpoint-xs} ) and (max-width: #{$breakpoint-xs-end})";
+$media-sm: "(min-width:#{$breakpoint-sm} ) and (max-width: #{$breakpoint-sm-end})";
+$media-md: "(min-width:#{$breakpoint-md} ) and (max-width: #{$breakpoint-md-end})";
+$media-lg: "(min-width:#{$breakpoint-lg} ) and (max-width: #{$breakpoint-lg-end})";
+
+// ## @media min width definition for XL
+$media-xl: "(min-width:#{$breakpoint-xl})";
+
+// ## @media min width for spacing utils
+$media-min-sm: "(min-width:#{$breakpoint-sm})";
+$media-min-lg: "(min-width:#{$breakpoint-lg})";

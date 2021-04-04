@@ -1,0 +1,20 @@
+// MonoDs Display helpers
+// Not scoped in @media
+.d-flex {
+  display: flex !important;
+}
+
+.d-inline {
+  display: inline !important;
+}
+
+.d-inline-block {
+  display: inline-block !important;
+}
+
+// MQ @media scoped
+.display-lg-flex {
+  @media #{$media-min-lg}{
+    display: flex !important;
+  }
+}

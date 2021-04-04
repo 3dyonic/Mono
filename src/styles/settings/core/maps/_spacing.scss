@@ -1,0 +1,33 @@
+$spacers: (
+		0: 0,
+		1: (
+				xs:$spacing-1,
+				sm:$spacing-mq-min-sm-1,
+				lg: $spacing-mq-min-lg-1
+		),
+		2: (
+				xs:$spacing-2,
+				sm:$spacing-mq-min-sm-2,
+				lg: $spacing-mq-min-lg-2
+		),
+		3: (
+				xs:$spacing-3,
+				sm:$spacing-mq-min-sm-3,
+				lg: $spacing-mq-min-lg-3
+		),
+		4:(
+				xs:$spacing-4,
+				sm:$spacing-mq-min-sm-4,
+				lg: $spacing-mq-min-lg-4
+		),
+		5: (
+				xs:$spacing-5,
+				sm:$spacing-mq-min-sm-5,
+				lg: $spacing-mq-min-lg-5
+		),
+		6: (
+				xs:$spacing-6,
+				sm:$spacing-mq-min-sm-6,
+				lg: $spacing-mq-min-lg-6
+		),
+);

@@ -1,0 +1,18 @@
+// # MonoDS Core:
+// This Partial is A Loader for Design centered Global 'Tokens' and 'Maps' definitions.
+
+// ## Loading order is based hierarchic roles.
+// - Not crucial for this scaffold.
+
+// ## Tokens
+@import "core/tokens/colors";
+@import "core/tokens/brand";
+@import "core/tokens/spacing";
+@import "core/tokens/type";
+@import "core/tokens/breakpoints";
+
+// ## Maps
+@import "core/maps/brand";
+@import "core/maps/spacing";
+@import "core/maps/type";
+@import "core/maps/breakpoints";

@@ -1,0 +1,100 @@
+$tabs-border-height: rem(1);
+
+$tab-border-width: rem(2);
+$tab-border-width-mq-min-lg: rem(5);
+$tab-border-color: gray(base);
+
+$tab-padding-y: rem(12);
+$tab-padding-x: rem(20); // due to wrap and shrink constraints
+$tab-padding-y-mq-min-sm: rem(11);
+$tab-padding-y-mq-min-lg: rem(19);
+
+$tab-font-size: $body-2-font-size;
+$tab-font-size-mq-min-sm: $body-2-font-size-mq-min-sm;
+$tab-font-size-mq-min-lg: $body-3-font-size-mq-min-sm;
+
+$tab-line-height: rem(17);
+$tab-line-height-mq-min-sm: rem(22);
+$tab-line-height-mq-min-lg: rem(19);
+
+
+$tab-text-transform: uppercase;
+
+$tab-color: brand-colors(secondary);
+$tab-active-color: brand-colors(accent);
+
+.tabs {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: $tabs-border-height;
+    content: "";
+    background: gray(base);
+  }
+}
+
+.tab {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: $tab-padding-y $tab-padding-x;
+  font-size: $tab-font-size;
+  line-height: $tab-line-height;
+  color: $tab-color;
+  text-transform: $tab-text-transform;
+  flex-shrink: 1;
+
+  @media #{$media-min-sm}{
+    padding-top: $tab-padding-y-mq-min-sm;
+    padding-bottom: $tab-padding-y-mq-min-sm;
+    font-size: $tab-font-size-mq-min-sm;
+    line-height: $tab-line-height-mq-min-sm;
+  }
+
+  @media #{$media-min-lg}{
+    padding-top: $tab-padding-y-mq-min-lg;
+    padding-bottom: $tab-padding-y-mq-min-lg;
+    font-size: $tab-font-size-mq-min-lg;
+    line-height: $tab-line-height-mq-min-lg;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: $tab-border-width;
+    content: "";
+    background: $tab-border-color;
+
+    @media #{$media-min-lg}{
+      height: $tab-border-width-mq-min-lg;
+    }
+  }
+
+  &:not(:only-child) {
+    @media #{$media-xs}, #{$media-sm},#{$media-md}{
+      flex-grow: 1;
+    }
+  }
+
+  &:focus, &--active {
+    color: $tab-active-color;
+
+    &::after {
+      background: $tab-active-color;
+
+      @media #{$media-min-lg}{
+        height: $tab-border-width-mq-min-lg;
+      }
+    }
+  }
+}

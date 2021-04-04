@@ -1,0 +1,25 @@
+$brand-colors: (
+		primary: $brand-color-primary,
+		secondary:$brand-color-secondary,
+		alt:$brand-color-alt,
+		accent: $brand-color-accent,
+		light: $brand-color-light,
+		success: $brand-color-success,
+		danger: $brand-color-danger,
+);
+
+$brand-tints-1: (
+		danger: $brand-color-danger-tint-1,
+		success: $brand-color-success-tint-1
+);
+
+$brand-tints-2: (
+		danger: $brand-color-danger-tint-2,
+		success: $brand-color-success-tint-2
+);
+
+$grays: (
+		base: $gray,
+		light: $gray-light,
+		dark: $gray-dark
+);

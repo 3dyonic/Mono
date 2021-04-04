@@ -1,0 +1,35 @@
+.select-radio {
+  &__control {
+
+    &:checked{}
+  }
+
+  &__indicator {
+    &::before,
+    &::after{}
+
+    &:before{}
+    &::after{}
+  }
+
+  &__content {
+
+  }
+
+  &__icon {
+
+  }
+
+  &__details {
+
+  }
+
+  &__headline {
+  }
+
+  &__subtitle {
+  }
+
+  &__caption {
+  }
+}

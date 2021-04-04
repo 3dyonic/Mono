@@ -1,0 +1,44 @@
+// # MonoDS Brand Colors
+// This Partial Scope is Brand color Tokens
+// - Brand color tokens are semantic 'keys' and use Registered colors as 'values'
+// - Since Some of the semantic were not declared we took the liberty to suggest ones.
+// - Primary colors are not separated by Semantic names
+// -- We used:
+// --- [primary, secondary, alt]
+// --- [gray-light,gray,gray-dark]
+// ---- This is not a good named scale, used it only because assessing weights was not applicable here.
+// ---- in real case we would have define a neutral scale using (100,200,300,400...) weight semantics and maybe interpolations based on one base gray
+// ----- E.g, values are just references: (material design)[https://material.io/design/color/the-color-system.html#tools-for-picking-colors]
+// Gray palette [
+// Gray 50 #FAFAFA,
+// 100 #F5F5F5,
+// 200 #EEEEEE,
+// 300 #E0E0E0,
+// 400 #BDBDBD,
+// 500, #9E9E9E,
+// 600 #757575,
+// 700 #616161,
+// 800 #424242,
+// 900 #212121
+// ]
+// - [Light, Dark], we do not have dark so used only light
+//
+
+$brand-color-primary: $reg-color-blue-cloud-burst;
+$brand-color-secondary: $reg-color-gray-shuttle;
+$brand-color-alt: $reg-color-blue-bay;
+$brand-color-accent: $reg-color-blue-st-tropaz;
+
+$brand-color-light: $reg-color-white;
+
+$gray: $reg-color-gray-loblolly;
+$gray-light: $reg-color-gray-light-desert;
+$gray-dark: $reg-color-gray-dusty;
+
+$brand-color-success: $reg-color-green-salem;
+$brand-color-success-tint-1: $reg-color-green-light-mountain-meadow;
+$brand-color-success-tint-2: $reg-color-green-light-magic-mint;
+
+$brand-color-danger: $reg-color-red-cardinal;
+$brand-color-danger-tint-1: $reg-color-red-light-amaranth;
+$brand-color-danger-tint-2: $reg-color-red-light-sundown;

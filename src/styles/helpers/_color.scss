@@ -1,0 +1,50 @@
+// MonoDs Color helpers
+
+@each $color, $value in $brand-colors {
+  .text-#{$color} {
+    color: #{$value} !important;
+  }
+}
+
+
+@each $color, $value in $grays {
+  .text-gray-#{$color} {
+    color: #{$value} !important;
+  }
+}
+
+@each $color, $value in $brand-tints-1 {
+  .text-#{$color}-tint-1 {
+    color: #{$value} !important;
+  }
+}
+
+@each $color, $value in $brand-tints-2 {
+  .text-#{$color}-tint-2 {
+    color: #{$value} !important;
+  }
+}
+
+@each $color, $value in $brand-colors {
+  .bg-#{$color} {
+    background-color: #{$value} !important;
+  }
+}
+
+@each $color, $value in $brand-tints-1 {
+  .bg-#{$color}-tint-1 {
+    background-color: #{$value} !important;
+  }
+}
+
+@each $color, $value in $brand-tints-2 {
+  .bg-#{$color}-tint-2 {
+    background-color: #{$value} !important;
+  }
+}
+
+@each $color, $value in $grays {
+  .bg-gray-#{$color} {
+    background-color: #{$value} !important;
+  }
+}

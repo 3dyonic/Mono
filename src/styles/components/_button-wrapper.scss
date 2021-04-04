@@ -1,0 +1,12 @@
+// # monoDS button wrapper pattern
+// Defines button dimension overrides
+
+.button-wrapper {
+  > .btn:not(:only-child) {
+    @media #{$media-xs}, #{$media-sm}, #{$media-md} {
+      flex: 1 1 100%;
+      min-width: 0;
+      max-width: 100%;
+    }
+  }
+}

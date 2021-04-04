@@ -1,0 +1,45 @@
+// MonoDS Button Private API
+
+$btn-padding-y: rem(14);
+$btn-padding-x: rem(50);
+
+$btn-line-height: $line-height-base;
+$btn-letter-spacing: rem(1.2);
+$btn-font-weight: $font-weight-bold;
+
+$btn-border-radius: $radius-sm;
+
+$btn-font-size: 12px;
+$btn-font-size-mq-sm: 16px;
+
+$btn-mq-sm-min-width: rem(380);
+$btn-mq-sm-max-width: rem(392);
+
+$btn-mq-lg-min-width: rem(200);
+$btn-mq-lg-max-width: rem(350);
+
+// Variants
+$btn-primary-color: brand-colors(light);
+$btn-primary-background-color: brand-colors(primary);
+$btn-primary-border-color: $btn-primary-background-color;
+
+$btn-primary-hover-color: brand-colors(light);
+$btn-primary-hover-background-color: brand-colors(alt);
+$btn-primary-hover-border-color: $btn-primary-background-color;
+
+$btn-primary-active-color: brand-colors(light);
+$btn-primary-active-background-color: brand-colors(accent);
+$btn-primary-active-border-color: $btn-primary-background-color;
+
+$btn-secondary-color: brand-colors(primary);
+$btn-secondary-background-color: brand-colors(light);
+$btn-secondary-border-color: $btn-secondary-color;
+
+
+$btn-secondary-hover-color: brand-colors(light);
+$btn-secondary-hover-background-color: brand-colors(alt);
+$btn-secondary-hover-border-color: $btn-primary-color;
+
+$btn-secondary-active-color: brand-colors(light);
+$btn-secondary-active-background-color: brand-colors(accent);
+$btn-secondary-active-border-color: $btn-secondary-background-color;

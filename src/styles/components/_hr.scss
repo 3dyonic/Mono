@@ -1,0 +1,6 @@
+.hr {
+	&--lg {
+		@include define-space(margin-top,$hr-lg-spacing);
+		@include define-space(margin-bottom, $hr-lg-spacing);
+	}
+}
